@@ -11,20 +11,22 @@
         <div class="row">
             <div class="col-lg-4 col-sm-6 mb-4">
                 <!-- Portfolio item 1-->
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                @foreach($posts as $post)
+                <div class="portfolio-item text-center mx-auto" >
+                    <a class="portfolio-link justify-content-center" data-bs-toggle="modal" href="{{route('posts.show', $post->id)}}">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                        <img   class="img-fluid" src="/uploads/posts/{{$post->image}}"   alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Threads</div>
-                        <div class="portfolio-caption-subheading text-muted">Illustration</div>
+                        <div class="portfolio-caption-heading">{{$post->title}}</div>
+                        
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
+            @endforeach
+            {{-- <div class="col-lg-4 col-sm-6 mb-4">
                 <!-- Portfolio item 2-->
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
@@ -100,6 +102,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 </section>
 @endsection

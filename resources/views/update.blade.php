@@ -15,8 +15,9 @@
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
-                <form id="contactForm" action="{{route('posts.store')}}" method="post" data-sb-form-api-token="API_TOKEN" enctype="multipart/form-data">
+                <form id="contactForm" action="{{route('posts.update', $post->id)}}" method="post" data-sb-form-api-token="API_TOKEN" enctype="multipart/form-data">
                 @csrf
+                @method('put')
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -63,7 +64,7 @@
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
                     
-                        <div class="text-center"><input class="btn btn-primary btn-xl text-uppercase" value="Add" id="submitButton" type="submit"></div>
+                        <div class="text-center"><input class="btn btn-primary btn-xl text-uppercase" value="Update" id="submitButton" type="submit"></div>
                     
                 </form>
             </div>

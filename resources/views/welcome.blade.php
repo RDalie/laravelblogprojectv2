@@ -7,10 +7,10 @@
         <header class="masthead">
             <div class="container">
                 <div class="masthead-heading text-uppercase">Blog</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                {{-- <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a> --}}
             </div>
         </header>
-        <!-- Services-->
+        {{-- <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
@@ -44,9 +44,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         
-        <!-- About-->
+        {{-- <!-- About-->
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
@@ -107,8 +107,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <!-- Team-->
+        </section> --}}
+        {{-- <!-- Team-->
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
@@ -151,9 +151,9 @@
                     <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- Clients-->
-        <div class="py-5">
+        {{-- <div class="py-5">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-3 col-sm-6 my-3">
@@ -170,7 +170,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <!-- Footer-->
         @include('layouts.footer')
