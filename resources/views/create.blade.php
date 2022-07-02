@@ -25,9 +25,9 @@
                             </div>
                             <div class="form-group">
                                 <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                <input class="form-control" id="title" type="text" placeholder="Title *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-validations="required"></div>
+                                    <div class="invalid-feedback" data-sb-feedback="message:required">A title is required.</div>
                             </div>
                             <div class="form-group mb-md-0">
                                 <!-- File Input-->
@@ -61,7 +61,9 @@
                     <!-- an error submitting the form-->
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Add</button></div>
+                    <form action="">
+                        <div class="text-center"><input class="btn btn-primary btn-xl text-uppercase" value="Add" id="submitButton" type="submit"></div>
+                    </form>
                 </form>
             </div>
         </section>

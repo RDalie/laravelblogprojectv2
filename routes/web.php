@@ -15,7 +15,7 @@ use App\Http\Controllers\PostController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 // Route::get('/create', function(){
 //     return view('create');
@@ -26,9 +26,9 @@ Route::get('/', function () {
 //     return view('show');
 // });
 
-// Route::get('/contact', function(){
-//     return view('contact');
-// });
+Route::get('/contact', function(){
+    return view('contact');
+})->name('contact');
 
 Route::resource('posts', PostController::class);
 Auth::routes();
