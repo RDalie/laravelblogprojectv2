@@ -8,16 +8,16 @@
             <h2 class="section-heading text-uppercase">Posts</h2>
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card-columns">
+            @foreach($posts as $post)
+            <div class="card">
                 <!-- Portfolio item 1-->
-                @foreach($posts as $post)
                 <div class="portfolio-item text-center mx-auto" >
                     <a class="portfolio-link justify-content-center" data-bs-toggle="modal" href="{{route('posts.show', $post->id)}}">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img  height="300px" width="360px" class="img-fluid" src="/uploads/posts/{{$post->image}}"   alt="..." />
+                        <img class="card-img-top"  height="300px" width="360px" class="img-fluid" src="/uploads/posts/{{$post->image}}"   alt="..." />
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">{{$post->title}}</div>
